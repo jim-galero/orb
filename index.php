@@ -24,22 +24,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Retailer Login</title>
+    <title>Orb. - Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div class="logo">
-    <img src="orb/ORB.jpg" alt="Retailer Logo">
-</div>
-<h2>Retailer Login</h2>
-<form method="POST">
-    <input type="email" name="email" placeholder="Email" required><br>
-    <input type="password" name="password" placeholder="Password" required><br>
-    <button type="submit">Login</button>
-</form>
-<p><a href="register.php">Register</a></p>
-<?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+<body style="background: url('orb/orb-bg.jpg') no-repeat center center fixed; background-size: cover;">
+    <div class="logo">
+        <img src="orb/ORB.jpg" alt="Orb Logo" width="120">
+    </div>
+    <h2>Create the life you crave.</h2>
+    <form method="POST">
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.php">Register here</a>.</p>
+    <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
 </body>
 </html>
