@@ -1,0 +1,122 @@
+/* Base styling */
+body {
+    background-color: #ffffff;
+    color: #111111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* Logo styling */
+.logo img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+}
+
+/* Form elements */
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #111;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #666;
+    background-color: #fff;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #111;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headings and paragraphs */
+h2, h3, h4, p {
+    color: #111;
+    margin-bottom: 10px;
+}
+
+/* Product Grid Layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: #111;
+}
+
+.product-card p {
+    margin: 0 0 10px;
+    color: #444;
+}
+
+/* Action Links (Edit/Delete) */
+.product-card .actions {
+    text-align: right;
+}
+
+.product-card .actions a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.product-card .actions a:hover {
+    text-decoration: underline;
+}
